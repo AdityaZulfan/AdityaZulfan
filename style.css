@@ -1,0 +1,222 @@
+
+/* =========================
+   GLOBAL STYLE
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b1120;
+    color: #f1f5f9;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 10%;
+    background: #111c30;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav h2 {
+    color: #60a5fa;
+    font-size: 28px;
+}
+
+nav div {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #cbd5e1;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.tag {
+    color: #60a5fa;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #60a5fa;
+}
+
+.hero p {
+    max-width: 650px;
+    color: #94a3b8;
+}
+
+.btn {
+    margin-top: 28px;
+    padding: 12px 25px;
+    border: 1px solid #60a5fa;
+    border-radius: 6px;
+    color: #60a5fa;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #60a5fa;
+    color: #0b1120;
+}
+
+/* =========================
+   PROJECT SECTION
+========================= */
+
+#projects {
+    padding: 70px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 65px;
+    color: #60a5fa;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+    margin-bottom: 100px;
+}
+
+.project.reverse {
+    flex-direction: row-reverse;
+}
+
+.project div {
+    flex: 1;
+}
+
+.project span {
+    color: #60a5fa;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.project h2 {
+    font-size: 27px;
+    margin: 15px 0;
+}
+
+.project p {
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+.project img {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #263b58;
+    transition: 0.4s;
+}
+
+.project img:hover {
+    transform: scale(1.03);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    background: #111c30;
+    color: #94a3b8;
+}
+
+footer h2 {
+    color: #60a5fa;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 18px 5%;
+    }
+
+    nav div {
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    #projects {
+        padding: 50px 6%;
+    }
+
+    .project,
+    .project.reverse {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 70px;
+    }
+
+    .project img {
+        width: 100%;
+        height: 240px;
+    }
+
+    .project h2 {
+        font-size: 23px;
+    }
+}
